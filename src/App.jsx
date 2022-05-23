@@ -1,11 +1,13 @@
 import React from "react";
 import ReactDOM from 'react-dom';
+import TestButtons from './TestButtons.jsx';
 
 const App = () => {
 
   return (
     <div>
-      Hello World 2
+      <TestButtons/>
+      Hello World 2 hhh
     </div>
   );
 }
