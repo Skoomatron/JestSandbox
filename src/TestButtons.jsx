@@ -15,4 +15,8 @@ const TestButtons = () => {
   )
 }
 
+export const test1 = () => {
+  return 'this will be a test';
+}
+
 export default TestButtons;
