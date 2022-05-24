@@ -1,9 +1,13 @@
 import TestButtons from './TestButtons.jsx';
 import React from 'react';
-import shallow from 'react-test-renderer';
+import {mount} from 'enzyme';
 
-it('should console log when clicked', () => {
-  const button = shallow(<TestButtons>Test</TestButtons>);
-  button.find('.test').simulate('click');
-  // expect(button.onClick).toBe('this will be a test')
+describe('Component', () => {
+
+  it('should have a clickable button', () => {
+    const testing = jest.fn();
+    const element = mount(<TestButtons onClick={testing}/>);
+    element.find('button').simulate('click');
+    expect(testing).toHaveBeenCalled();
+  })
 })
