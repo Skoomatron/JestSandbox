@@ -1,13 +1,13 @@
 import React from "react";
 import ReactDOM from 'react-dom';
-import TestButtons from './TestButtons.jsx';
+import TestButtons from './components/TestButtons.jsx';
 
 const App = () => {
 
   return (
     <div>
       <TestButtons/>
-      Hello World 2 hhh
+      This Is a Jest Testing Sandbox
     </div>
   );
 }

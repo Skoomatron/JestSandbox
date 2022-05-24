@@ -1,4 +1,5 @@
 import React from 'react';
+const test = require('./TestButtons.test.jsx');
 
 const TestButtons = () => {
 
@@ -8,15 +9,13 @@ const TestButtons = () => {
 
   return (
     <div>
-      <button onClick={test1}>
+      <button className='test' onClick={test1}>
         Test 1
       </button>
     </div>
   )
 }
 
-export const test1 = () => {
-  return 'this will be a test';
-}
+
 
 export default TestButtons;
